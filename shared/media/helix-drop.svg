@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 390" width="660" height="390">
+  <defs>
+    <linearGradient id="sky" x2=".6" y2="1"><stop stop-color="#b5e8fc"/><stop offset=".55" stop-color="#dedffb"/><stop offset="1" stop-color="#fff0d9"/></linearGradient>
+    <linearGradient id="stem"><stop stop-color="#a194db"/><stop offset=".44" stop-color="#f7f5ff"/><stop offset="1" stop-color="#b3a7e4"/></linearGradient>
+    <radialGradient id="ball" cx=".30" cy=".25" r=".8"><stop stop-color="#fff5b3"/><stop offset=".63" stop-color="#fda273"/><stop offset="1" stop-color="#d86b87"/></radialGradient>
+    <pattern id="dots" width="41" height="41" patternUnits="userSpaceOnUse"><circle cx="12" cy="17" r="1.25" fill="#fff"/><circle cx="34" cy="31" r=".9" fill="#9c98d5" opacity=".4"/></pattern>
+    <pattern id="danger" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(30)"><path d="M0 0h10v10H0Z" fill="#e56a8a"/><path d="M0 0h3v10H0Z" fill="#ffe1bb"/></pattern>
+    <path id="back" d="M-132 0a132 35 0 0 1 264 0h-92a40 11 0 0 0-80 0Z"/>
+    <path id="front" d="M-132 0a132 35 0 0 0 64 30l45-20a40 11 0 0 1-17-10ZM132 0a132 35 0 0 1-65 30l-45-20a40 11 0 0 0 18-10Z"/>
+    <path id="half" d="M-132 0a132 35 0 0 0 185 32L15 10a40 11 0 0 1-55-10ZM132 0a132 35 0 0 1-29 22L31 7a40 11 0 0 0 9-7Z"/>
+    <path id="cloud" d="M-60 0q5-15 23-13 2-21 26-23 20-2 26 16 13-8 25 1 9 6 9 13 20-1 20 12 0 8-15 8H-46Q-62 12-60 0Z"/>
+  </defs>
+  <path d="M0 0h660v390H0Z" fill="url(#sky)"/>
+  <path d="M0 0h660v390H0Z" fill="url(#dots)" opacity=".77"/>
+  <g fill="#fff" opacity=".66">
+    <use href="#cloud" transform="translate(109 109)"/>
+    <use href="#cloud" transform="translate(547 159) scale(1.13)"/>
+    <use href="#cloud" transform="translate(146 285) scale(1.24)"/>
+    <use href="#cloud" transform="translate(535 322) scale(.78)"/>
+  </g>
+  <g>
+    <use href="#back" transform="translate(330 302)" fill="#fac374"/>
+    <use href="#back" transform="translate(330 212)" fill="#a995ef"/>
+    <use href="#back" transform="translate(330 122)" fill="#8bdad7"/>
+    <rect x="303" y="58" width="54" height="302" rx="12" fill="url(#stem)"/>
+    <ellipse cx="330" cy="60" rx="27" ry="9" fill="#fdfaff"/>
+    <path d="M306 141h48m-48 82h48m-48 89h48" stroke="#9b89d8" stroke-opacity=".48" stroke-width="4"/>
+    <use href="#half" transform="translate(330 310)" fill="#cd9250"/>
+    <use href="#half" transform="translate(330 302)" fill="#ffd28b" stroke="#fff8"/>
+    <use href="#half" transform="translate(330 220) scale(-1 1)" fill="#8d75c8"/>
+    <use href="#half" transform="translate(330 212) scale(-1 1)" fill="#c9b5fc" stroke="#fff8"/>
+    <path d="M209 226a132 35 0 0 0 50 17l48-22a40 11 0 0 1-12-5Z" fill="url(#danger)"/>
+    <use href="#front" transform="translate(330 130)" fill="#5eabb4"/>
+    <use href="#front" transform="translate(330 122)" fill="#a9eae1" stroke="#fff9"/>
+  </g>
+  <path d="M330 155v38" stroke="#8271a6" stroke-opacity=".59" stroke-width="2.5" stroke-dasharray="4 7" stroke-linecap="round"/>
+  <path d="M321 79q9-18 18 0v27h-18Z" fill="#fff6da" opacity=".77"/>
+  <circle cx="330" cy="124" r="20" fill="url(#ball)" stroke="#fff1cf" stroke-width="2"/>
+  <circle cx="323" cy="117" r="5" fill="#fff8df"/>
+  <g fill="none" stroke="#fff9f5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M157 150q23-19 46-21m-43 5-6 19 18-1"/>
+    <path d="M507 242q-22 21-47 23m44-7 6-19-17 1"/>
+    <path d="M370 148l8 4m-87-5-10 4"/>
+  </g>
+  <g fill="#fffaf1"><path d="M119 185q2 12 14 14-12 2-14 14-2-12-14-14 12-2 14-14Z"/><path d="M518 89q2 9 11 11-9 2-11 11-2-9-11-11 9-2 11-11Z"/></g>
+</svg>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f6f0">
+  <title>{{game-title}} · Mint Play</title>
+  <link rel="icon" href="./assets/media/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/mint.css">
+  <script type="module" src="./assets/play.js"></script>
+</head>
+<body class="play-body" data-game="{{game-id}}">
+  <div class="backdrop" aria-hidden="true"></div>
+  <main class="shell game-shell">
+    <header class="game-header">
+      <a class="home-link" href="{{hub-url}}" {{hub-hidden}}>
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Mint Play
+      </a>
+      <div class="coin-chip">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8 15 9l6.6 1-4.8 4.7 1.1 6.6-5.9-3.1-5.9 3.1 1.1-6.6L2.4 10 9 9Z" fill="currentColor" stroke="currentColor" stroke-width=".8" stroke-linejoin="round"/></svg>
+        <span>{{game-currency}}</span><strong id="balance">0</strong>
+      </div>
+    </header>
+    <div class="game-heading">
+      <h1>{{game-title}}</h1>
+      <div class="heading-actions">
+        <button class="style-button" id="styles" type="button" aria-haspopup="dialog">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3c1.3 5.5 3.5 7.7 9 9-5.5 1.3-7.7 3.5-9 9-1.3-5.5-3.5-7.7-9-9 5.5-1.3 7.7-3.5 9-9Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          Styles
+        </button>
+        <button class="pause-button" id="pause" type="button" aria-label="Pause game" hidden>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6v12m6-12v12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="game-hud">
+      <div class="stat progress-stat"><span>{{game-progress}}</span><strong id="progress">{{game-start}}</strong></div>
+      <div class="stat"><span>Score</span><strong id="score">0</strong></div>
+      <div class="stat"><span>Best</span><strong id="best">0</strong></div>
+    </div>
+    <div class="game-frame" id="game-frame" aria-label="{{game-title}} playfield" tabindex="0">
+      <canvas id="scene" role="img" aria-label="{{game-title}} game"></canvas>
+      <div class="game-hint" id="game-hint" aria-live="polite"></div>
+      <div class="lives" id="lives" role="img" hidden></div>
+      <div class="run-overlay" id="overlay" data-phase="ready">
+        <div class="run-panel">
+          <span class="panel-badge" id="panel-badge" hidden>Ad preview</span>
+          <h2 id="panel-title" hidden></h2>
+          <p id="panel-text">{{game-controls}}</p>
+          <div class="result-stats" id="results" hidden>
+            <div><span>Score</span><strong id="result-score">0</strong></div>
+            <div><span>{{game-currency}}</span><strong id="result-coins">+0</strong></div>
+          </div>
+          <button class="button action" id="action" type="button">Play</button>
+          <button class="button secondary" id="replay" type="button" hidden>Play again</button>
+        </div>
+      </div>
+    </div>
+    <div class="play-footer">
+      <p class="control-note" id="control-note" hidden>{{game-controls}}<span class="keyboard-note"> {{game-keys}}</span></p>
+      <p class="save-status" id="save-status" aria-live="polite"></p>
+      <button class="button retry" id="retry" type="button" hidden>Retry save</button>
+    </div>
+  </main>
+  <dialog class="style-shop" id="shop" aria-labelledby="shop-title">
+    <div class="shop-content">
+      <header>
+        <div>
+          <h2 id="shop-title">{{game-shop}}</h2>
+          <p><strong id="shop-balance">0</strong> {{game-currency}}</p>
+        </div>
+        <form method="dialog"><button class="close-shop" type="submit" aria-label="Close styles">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>
+        </button></form>
+      </header>
+      <div id="style-list" class="style-list"></div>
+      <p class="shop-status" id="shop-status" aria-live="polite"></p>
+    </div>
+  </dialog>
+</body>
+</html>

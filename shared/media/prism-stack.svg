@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 390" width="660" height="390">
+  <defs>
+    <linearGradient id="sky" x2=".32" y2="1"><stop stop-color="#a0e2f7"/><stop offset="1" stop-color="#fff0b9"/></linearGradient>
+    <linearGradient id="gloss" x2="0" y2="1"><stop stop-color="#fff" stop-opacity=".24"/><stop offset=".58" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#60365d" stop-opacity=".2"/></linearGradient>
+    <path id="cloud" d="M-56 8q0-12 18-14-2-19 17-24 20-5 28 13 13-16 29-9 11 5 12 20 19 0 19 12 0 11-21 11h-82Q-56 16-56 8Z"/>
+    <path id="shine" d="M0-12C1-4 4-1 12 0 4 1 1 4 0 12-1 4-4 1-12 0-4-1-1-4 0-12Z"/>
+  </defs>
+  <path d="M0 0h660v390H0z" fill="url(#sky)"/>
+  <circle cx="524" cy="103" r="51" fill="#fff8d0"/><circle cx="524" cy="103" r="67" fill="none" stroke="#fff6d5" opacity=".66"/>
+  <g fill="#fffdf0" opacity=".85">
+    <use href="#cloud" transform="translate(102 105) scale(1.1)"/>
+    <use href="#cloud" transform="translate(520 189) scale(1.3)"/>
+    <use href="#cloud" transform="translate(222 60) scale(.66)"/>
+    <use href="#cloud" transform="translate(60 210) scale(.58)"/>
+  </g>
+  <path d="M0 271q118-89 235-10 102 69 219-4 104-74 206-5v138H0Z" fill="#b3e3ae"/>
+  <path d="M0 316q94-52 209-5 119 50 240-9 101-55 211 9v79H0Z" fill="#83cdb7"/>
+  <path d="M0 357q133-32 235 2 127 36 271-11 73-22 154 3v39H0Z" fill="#9bdfb0"/>
+  <g fill="#e9f6c7"><circle cx="34" cy="361" r="19"/><circle cx="131" cy="351" r="15"/><circle cx="546" cy="353" r="22"/><circle cx="598" cy="351" r="13"/></g>
+  <ellipse cx="334" cy="339" rx="157" ry="17" fill="#437f7d" opacity=".2"/>
+  <g stroke="#7e548a" stroke-opacity=".25" stroke-width="2">
+    <rect x="188" y="298" width="284" height="37" rx="9" fill="#fc9a8e"/>
+    <rect x="199" y="258" width="273" height="37" rx="9" fill="#ffce66"/>
+    <rect x="220" y="218" width="248" height="37" rx="9" fill="#a4d98a"/>
+    <rect x="220" y="178" width="215" height="37" rx="9" fill="#76d7de"/>
+    <rect x="276" y="114" width="215" height="37" rx="9" fill="#cba6f2"/>
+  </g>
+  <g fill="url(#gloss)">
+    <rect x="188" y="298" width="284" height="37" rx="9"/>
+    <rect x="199" y="258" width="273" height="37" rx="9"/>
+    <rect x="220" y="218" width="248" height="37" rx="9"/>
+    <rect x="220" y="178" width="215" height="37" rx="9"/>
+    <rect x="276" y="114" width="215" height="37" rx="9"/>
+  </g>
+  <g stroke="#fff9" stroke-width="2.5" stroke-linecap="round">
+    <path d="M198 305h263m-251-40h251m-230-40h227m-227-40h193m-137-64h195"/>
+    <path d="M221 160v-50m213 51v-50" stroke="#866a9a" stroke-width="2" stroke-dasharray="3 5" opacity=".62"/>
+    <path d="M265 128h-37m32 11h-27" stroke-width="3"/>
+  </g>
+  <g fill="#fff6d2">
+    <use href="#shine" transform="translate(330 316) scale(.67)"/><use href="#shine" transform="translate(336 277) scale(.67)"/>
+    <use href="#shine" transform="translate(344 237) scale(.67)"/><use href="#shine" transform="translate(328 197) scale(.67)"/>
+    <use href="#shine" transform="translate(384 133) scale(.69)"/><use href="#shine" transform="translate(135 187)"/>
+    <use href="#shine" transform="translate(521 229)"/><use href="#shine" transform="translate(453 82) scale(.65)"/>
+  </g>
+  <rect x="478" y="242" width="30" height="32" rx="6" fill="#a0d887" transform="rotate(26 493 258)"/>
+</svg>

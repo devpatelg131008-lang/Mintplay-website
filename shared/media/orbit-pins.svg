@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 390" width="660" height="390">
+  <defs>
+    <linearGradient id="sky" x2=".84" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#dcddff"/><stop offset=".52" stop-color="#bcb5f6"/><stop offset="1" stop-color="#ffdff0"/>
+    </linearGradient>
+    <radialGradient id="planet" cx=".28" cy=".25" r=".82">
+      <stop stop-color="#fff9c5"/><stop offset=".51" stop-color="#ffd789"/><stop offset="1" stop-color="#d687b4"/>
+    </radialGradient>
+    <radialGradient id="moon" cx=".32" cy=".25" r=".8">
+      <stop stop-color="#eafcff"/><stop offset="1" stop-color="#8a99e2"/>
+    </radialGradient>
+    <pattern id="dust" width="47" height="47" patternUnits="userSpaceOnUse">
+      <circle cx="13" cy="12" r="1.25" fill="#fff" opacity=".7"/>
+      <circle cx="33" cy="34" r="1" fill="#8e79c6" opacity=".32"/>
+    </pattern>
+    <clipPath id="world"><circle cx="330" cy="185" r="104"/></clipPath>
+    <path id="star" d="M0-11C1-4 4-1 11 0 4 1 1 4 0 11-1 4-4 1-11 0-4-1-1-4 0-11Z"/>
+    <path id="pin" d="M0 0Q12-9 22-6L36-11 32 0 36 11 22 6Q12 9 0 0Z"/>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h660v390H0z"/>
+  <path fill="url(#dust)" d="M0 0h660v390H0z"/>
+  <g fill="none" stroke="#fff" opacity=".54" transform="rotate(-17 330 185)">
+    <ellipse cx="330" cy="185" rx="249" ry="98"/>
+    <ellipse cx="330" cy="185" rx="275" ry="125"/>
+    <ellipse cx="330" cy="185" rx="218" ry="73"/>
+  </g>
+  <circle cx="114" cy="104" r="29" fill="url(#moon)"/>
+  <ellipse cx="114" cy="104" rx="46" ry="11" transform="rotate(-25 114 104)" fill="none" stroke="#effbff" stroke-width="4"/>
+  <circle cx="545" cy="267" r="41" fill="#fff3fa" opacity=".53"/>
+  <circle cx="556" cy="256" r="9" fill="#efdafa"/>
+  <ellipse cx="330" cy="192" rx="176" ry="43" fill="none" stroke="#936eae" stroke-opacity=".42" stroke-width="12" transform="rotate(-16 330 185)"/>
+  <ellipse cx="330" cy="185" rx="173" ry="43" fill="none" stroke="#fff6ce" stroke-width="7" transform="rotate(-16 330 185)"/>
+  <circle cx="330" cy="185" r="104" fill="url(#planet)"/>
+  <g clip-path="url(#world)" fill="none" stroke-linecap="round">
+    <path d="M216 129c53-32 105 47 229-6m-250 55c57-37 134 44 259-8m-253 53c58-26 139 52 264-1m-233 48c61-17 124 34 220-11" stroke="#fff8d9" stroke-width="12" opacity=".55"/>
+    <path d="M228 149c60-9 113 44 213 4m-229 48c61-15 141 48 234-5" stroke="#b673b8" stroke-opacity=".31" stroke-width="5"/>
+    <ellipse cx="312" cy="120" rx="18" ry="8" fill="#fffadc" opacity=".7"/>
+    <ellipse cx="383" cy="211" rx="24" ry="9" fill="#fff4d2" opacity=".6"/>
+  </g>
+  <path d="M157 185a173 43 0 0 0 346 0" transform="rotate(-16 330 185)" stroke="#fff8d8" stroke-width="8" fill="none"/>
+  <g fill="#dff68d" stroke="#64884b" stroke-width="2" stroke-linejoin="round">
+    <use href="#pin" transform="translate(309 84) rotate(-101)"/>
+    <use href="#pin" transform="translate(418 126) rotate(-34)"/>
+    <use href="#pin" transform="translate(433 220) rotate(26)"/>
+    <use href="#pin" transform="translate(255 261) rotate(131)"/>
+    <use href="#pin" transform="translate(228 174) rotate(190)" fill="#e8c9f6" stroke="#8b6eac"/>
+    <use href="#pin" transform="translate(330 308) rotate(90) scale(1.15)"/>
+  </g>
+  <path d="M330 298v-15m0 79v18" stroke="#fff9db" stroke-width="3" stroke-dasharray="4 6" stroke-linecap="round"/>
+  <g fill="#fffbd6">
+    <use href="#star" transform="translate(196 102) scale(.9)"/>
+    <use href="#star" transform="translate(511 132) scale(1.65)"/>
+    <use href="#star" transform="translate(144 277)"/>
+    <use href="#star" transform="translate(458 272) scale(.74)"/>
+    <use href="#star" transform="translate(371 295) scale(.76)"/>
+  </g>
+  <g fill="#fff" opacity=".74"><circle cx="162" cy="156" r="3"/><circle cx="490" cy="223" r="4"/><circle cx="495" cy="94" r="3"/><circle cx="191" cy="316" r="3"/></g>
+</svg>

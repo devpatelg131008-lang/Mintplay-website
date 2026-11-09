@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f6f0">
+  <meta name="description" content="Play Orbit Pins, Prism Stack, and Helix Drop on Mint Play.">
+  <title>Mint Play</title>
+  <link rel="icon" href="./assets/media/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/mint.css">
+  <script type="module" src="./assets/hub.js"></script>
+</head>
+<body class="hub-body">
+  <div class="backdrop" aria-hidden="true"></div>
+  <main class="shell hub-shell">
+    <header class="hub-header">
+      <img src="./assets/media/mark.svg" width="38" height="38" alt="">
+      <h1>Mint Play</h1>
+    </header>
+    <section class="wallet" aria-label="Mint Coin balance">
+      <div class="wallet-icon" aria-hidden="true">
+        <svg viewBox="0 0 48 48" fill="none">
+          <circle cx="24" cy="24" r="19" stroke="currentColor" stroke-width="2"/>
+          <circle cx="24" cy="24" r="15" stroke="currentColor" stroke-opacity=".35" stroke-width="1.2"/>
+          <path d="M16 31V17l8 8 8-8v14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.7"/>
+        </svg>
+      </div>
+      <div>
+        <p class="wallet-label">Mint Coins</p>
+        <p class="wallet-amount" data-coins aria-live="polite">2,480</p>
+      </div>
+      <span class="wallet-preview">Preview</span>
+    </section>
+    <section class="games" aria-labelledby="games-title">
+      <h2 id="games-title">Choose a game</h2>
+      <div class="game-grid">
+        <a class="game-card card-orbit" href="{{orbit-pins}}" target="_blank" rel="noopener" aria-label="Play Orbit Pins in a new tab">
+          <img class="game-cover" src="./assets/media/orbit-pins.svg" width="660" height="390" alt="">
+          <span class="card-name"><span>Orbit Pins</span><span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 12h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+        </a>
+        <a class="game-card card-prism" href="{{prism-stack}}" target="_blank" rel="noopener" aria-label="Play Prism Stack in a new tab">
+          <img class="game-cover" src="./assets/media/prism-stack.svg" width="660" height="390" alt="">
+          <span class="card-name"><span>Prism Stack</span><span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 12h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+        </a>
+        <a class="game-card card-helix" href="{{helix-drop}}" target="_blank" rel="noopener" aria-label="Play Helix Drop in a new tab">
+          <img class="game-cover" src="./assets/media/helix-drop.svg" width="660" height="390" alt="">
+          <span class="card-name"><span>Helix Drop</span><span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 12h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
